@@ -7,18 +7,25 @@
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <style>
     body{
         margin:0;
         padding:10px 0;
         background:#f4f1ec;
-        font-family:'Poppins', sans-serif;
+        font-family: "Montserrat", sans-serif;
         display:flex;
         justify-content:center;
         align-items:center;
         min-height:100vh;
+    }
+
+    .title{
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
     }
 
     .card{
@@ -39,7 +46,7 @@
 
     .top h1{
         margin:0;
-        font-size:48px;
+        font-size:64px;
         letter-spacing:2px;
     }
 
@@ -50,7 +57,7 @@
     }
 
     .content{
-        padding:50px;
+        padding:20px;
         text-align:center;
         color:#444;
     }
@@ -61,7 +68,7 @@
     }
 
     .message{
-        font-size:24px;
+        font-size:32px;
         line-height:1.7;
         margin-bottom:40px;
     }
@@ -110,11 +117,11 @@
         }
 
         .top h1{
-            font-size:36px;
+            font-size:48px;
         }
 
         .message{
-            font-size:20px;
+            font-size:24px;
         }
     }
 </style>
@@ -125,7 +132,7 @@
 <div class="card">
 
     <div class="top">
-        <h1>Bon Cadeau</h1>
+        <h1 class="title">Bon Cadeau</h1>
         <p>Pour nos 2 ans ❤️</p>
     </div>
 
@@ -142,7 +149,7 @@
             autoplay>
         </lottie-player>
 
-        <div class="message">
+        <div class="message title">
             Mon amoureuse, je t’offre une journée shopping à deux,<br>
             suivie d’un moment rien qu’à nous.
         </div>
@@ -158,12 +165,12 @@
 
         <div class="coupon">
             <p>Valeur du bon :</p>
-            <strong>Shopping illimité avec ton développeur préféré 😎</strong>
+            <strong class="title">Shopping illimité avec ton développeur préféré 😎</strong>
         </div>
 
         <div class="signature">
-            Avec tout mon amour,<br><br>
-            <strong>ton Crush</strong>
+            Offert avec amour par
+            <p style="font-size: 35px; font-weight: 500; margin: 15px 0 0 0;" class="title">ton Crush</p>
         </div>
 
     </div>
